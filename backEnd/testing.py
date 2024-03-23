@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 import pandas as pd
 
-os.environ['OPENAI_API_KEY'] = 'KEY'
+os.environ['OPENAI_API_KEY'] = 'QYJuTgvoYZ09rgB2BLYVT3BlbkFJ1bjZU9SJ4S7LwDaUW810'
 
 client = OpenAI()
 
