@@ -50,8 +50,9 @@ const Navbar = ({ scrollToSection, aboutRef, projectsRef, contactRef }) => {
         </div>
       </nav>
       <section className="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1">
-        <h1 style={{ fontSize: '1.5em' }}>Responsive Navbar</h1>
-        <h1 style={{ fontSize: '1.3em' }}>Bootstrap 5</h1>
+      <h1 style={{ color: 'black', fontSize: '1.5em' }}>Responsive Navbar</h1>
+      <h1 style={{ color: 'black', fontSize: '1.3em' }}>Bootstrap 5</h1>
+  
       </section>
     </main>
   );
