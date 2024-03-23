@@ -6,6 +6,7 @@ function HomePage() {
     };
     const logout =()=>{
         localStorage.clear()
+        window.location.reload()
     }
     return (
         <div style={style}>
