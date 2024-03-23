@@ -2,7 +2,7 @@ import os
 from openai import OpenAI
 import pandas as pd
 
-os.environ['OPENAI_API_KEY'] = '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'
+os.environ['OPENAI_API_KEY'] = 'KEY'
 
 client = OpenAI()
 
@@ -30,7 +30,7 @@ file_paths = [
 
 user_input = input("Enter your message: ")  # Get user input as a sentence
 
-prompt = 'There are 5 cars and 4 more cars come. Because there were 5 before and 4 came, we can use the equation 5 + 4 and get the total amount of cars.'
+# prompt = 'There are 5 cars and 4 more cars come. Because there were 5 before and 4 came, we can use the equation 5 + 4 and get the total amount of cars.'
 
 response = client.chat.completions.create(
     model='gpt-3.5-turbo',
@@ -46,8 +46,6 @@ response = client.chat.completions.create(
     frequency_penalty=0,
     presence_penalty=0
     )
-
-# Append a message to the completion response based on whether profanity is found
 
 
 print(response.choices[0].message.content)
