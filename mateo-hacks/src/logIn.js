@@ -1,6 +1,8 @@
 import React from 'react';
 import './login.css';
 import { Navigate } from "react-router-dom"
+// import Home from '/';
+// import Login from '/login';
 
 
 function Login() {
@@ -16,6 +18,13 @@ function Login() {
     if(username === "Adam" && password === "1"){
       console.log("works");
       return <Navigate to = '/' />;
+
+      // <Router>
+      //   <Routes>
+      //     <Route path = '/login' element = {<Login />} />
+      //     <Route path = '/' element = {<Home />} />
+      //   </Routes>
+      // </Router>
     }else{
       console.log("failed");
       return <Navigate to = '/' />;
