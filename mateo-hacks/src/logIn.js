@@ -17,8 +17,10 @@ function Login() {
             <div className='input-box'>
                 <label>
                     <input type='checkbox'/>
+                    Remember me 
                 </label>
             </div>
+            <button type='submit'>Login</button>
 
         </form>
         </div>
