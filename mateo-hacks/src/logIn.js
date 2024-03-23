@@ -3,6 +3,24 @@ import './login.css';
 
 
 function Login() {
+
+
+  const handleClick = (event) => {
+    // console.log('testing ');
+    event.preventDefault();
+    const username = document.querySelector('input[type="text"]').value;
+    const password = document.querySelector('input[type="password"]').value;
+
+    // Do something with username and password
+    if(username === "Adam" && password === "1"){
+      console.log("works");
+    }else{
+      console.log("failed");
+    }
+    // console.log("Username:", username);
+    // console.log("Password:", password);
+    
+  }
     return (
       <div className='wrapper'> 
         <form action="">
@@ -20,7 +38,7 @@ function Login() {
                     Remember me 
                 </label>
             </div>
-            <button type='submit'>Login</button>
+            <button onClick = {handleClick} type='submit'>Login</button>
 
         </form>
         </div>
