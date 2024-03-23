@@ -1,11 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 
 const Navbar = ({ scrollToSection, aboutRef, projectsRef, contactRef }) => {
   return (
     <main>
       <nav className="navbar navbar-expand-lg navbar-dark bg-transparent">
         <div className="container-fluid">
-          <a className="navbar-brand fs-4" href="#">Bootstrap navbar</a>
+          <a className="navbar-brand fs-4" href="#" style={{ color: 'blue' }} ></a>
           <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span className="navbar-toggler-icon"></span>
           </button>
@@ -15,45 +17,34 @@ const Navbar = ({ scrollToSection, aboutRef, projectsRef, contactRef }) => {
               <button type="button" className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div className="offcanvas-body d-flex flex-column flex-lg-row p-4 p-lg-0">
-              <ul className="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-3">
+              <ul className="navbar-nav justify-content-center align-items-center fs-5 flex-grow-1 pe-5">
                 <li className="nav-item mx-2">
                   <a className="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link" href="#about">About</a>
+                <Link to="/">Home</Link>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link" href="#services">Services</a>
+                <a className="nav-link" href="#contact" style={{ color: 'blue' }}>Contact</a>
                 </li>
                 <li className="nav-item mx-2">
-                  <a className="nav-link" href="#contact">Contact</a>
+                <a className="nav-link" href="#contact" style={{ color: 'blue' }}>Contact</a>
+                </li>
+                <li className="nav-item mx-2">
+                <Link to="/login">Login</Link>
                 </li>
               </ul>
               <div className="d-flex flex-column justify-content-center align-items-center gap-3">
-                <a href="#login" className="text-white">Login</a>
-                <a
-                  href="#signup"
-                  className="text-white text-decoration-none px-3 py-1 rounded-4"
-                  style={{ backgroundColor: '#f94ca4' }}
-                >Sign Up</a>
-                <form className="d-flex mt-3" role="search">
-                  <input
-                    className="form-control me-2"
-                    type="search"
-                    placeholder="Search"
-                    aria-label="Search"
-                  />
-                </form>
+                <Link to="/login" className="text-white">Login</Link>
+            
+                
+                
               </div>
             </div>
           </div>
         </div>
       </nav>
-      <section className="w-100 vh-100 d-flex flex-column justify-content-center align-items-center text-white fs-1">
-      <h1 style={{ color: 'black', fontSize: '1.5em' }}>Responsive Navbar</h1>
-      <h1 style={{ color: 'black', fontSize: '1.3em' }}>Bootstrap 5</h1>
-  
-      </section>
+      
     </main>
   );
 };

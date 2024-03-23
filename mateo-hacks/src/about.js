@@ -1,6 +1,4 @@
 import React from 'react';
-import Header from './Header'; // Assuming you have a Header component
-import Footer from './Footer'; // Assuming you have a Footer component
 
 function AboutUsPage() {
   return (
