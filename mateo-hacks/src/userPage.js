@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 function UserPage() {
@@ -6,6 +5,7 @@ function UserPage() {
         backgroundColor: 'black', // Set background color to black
         color: 'white', // Set text color to white
         padding: '20px', // Add some padding for better readability
+        minHeight: '100vh', // Ensure the page takes up at least the full height of the viewport
     };
 
     return (
